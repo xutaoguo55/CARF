@@ -1,0 +1,13 @@
+.git
+.Rproj.user
+renv/library
+__pycache__
+*.pyc
+.DS_Store
+carf_benchmark/raw
+carf_benchmark/tests/tmp
+figures
+figures_gigascience
+*.pdf
+benchmark_results/*.loom
+benchmark_results/GSE10846_pseudo_counts*.csv

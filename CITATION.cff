@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use CARF in your research, please cite the following paper."
+title: "CARF: A Confounder-Adjusted Ranking Framework for Perturbation Inference Benchmarks — Demonstrated on WWOX Tumor Suppressor Silencing in Diffuse Large B-Cell Lymphoma"
+type: article
+authors:
+  - given-names: Xutao
+    family-names: Guo
+    affiliation: "Department of Hematology, Nanfang Hospital, Southern Medical University, Guangzhou, China"
+    email: gxt827@126.com
+    orcid: "https://orcid.org/0000-0002-7201-8092"
+repository-code: "https://github.com/xutaoguo55/CARF"
+url: "https://github.com/xutaoguo55/CARF"
+doi: "10.5281/zenodo.20081139"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20081139"
+    description: "Zenodo archive of the CARF codebase"
+abstract: "CARF implements seven quantitative metrics and six confounder-adjusted diagnostics to reveal the confounding architecture underlying perturbation inference benchmarks, distinguishing methods that capture perturbation biology from those that capture confounds."
+keywords:
+  - benchmark methodology
+  - confounder adjustment
+  - perturbation inference
+  - foundation model evaluation
+  - tumor suppressor gene
+  - DLBCL
+license: CC-BY-NC-4.0

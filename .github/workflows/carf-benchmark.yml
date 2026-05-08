@@ -1,0 +1,66 @@
+name: CARF-Benchmark v1
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  carf-benchmark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "4.4.2"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'install.packages(c("jsonlite", "testthat", "ggplot2"), repos = "https://cloud.r-project.org")'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-carf.txt
+
+      - name: Run unit tests
+        run: |
+          make test
+
+      - name: Materialize public dataset source manifests
+        run: |
+          make carf-v1-sources
+
+      - name: Prepare CARF-Benchmark v1 seed inputs
+        run: |
+          Rscript --vanilla code/20_prepare_carf_benchmark_v1.R
+
+      - name: Validate standardized schemas
+        run: |
+          make carf-v1-validate-all
+
+      - name: Generate leaderboard
+        run: |
+          Rscript --vanilla code/21_run_carf_benchmark_v1.R
+
+      - name: Upload leaderboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: carf-benchmark-leaderboard
+          path: |
+            carf_benchmark/leaderboard/leaderboard.csv
+            carf_benchmark/leaderboard/leaderboard.md
+            carf_benchmark/leaderboard/leaderboard_summary.csv
+            carf_benchmark/leaderboard/leaderboard_summary.md
+            carf_benchmark/leaderboard/audit_matrix.csv
+            carf_benchmark/leaderboard/psr_curves.csv
+            carf_benchmark/leaderboard/dataset_readiness.csv
