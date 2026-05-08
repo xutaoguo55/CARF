@@ -1,0 +1,7 @@
+"dataset_id","status","inputs_status","run_dir","has_source_manifest","has_complete_inputs","n_method_score_rows","n_ground_truth_rows","n_covariate_rows","n_models","n_perturbations","missing_inputs"
+"wwox_dlbcl_v1","active","ready","carf_benchmark/runs/wwox_dlbcl_v1",FALSE,TRUE,49299,29,21655,4,1,""
+"adamson_2016_perturbseq","active","ready_smoke_scale","carf_benchmark/runs/adamson_2016_perturbseq",TRUE,TRUE,45387,15129,15129,3,3,""
+"dixit_2016_perturbseq","active","pending_download","carf_benchmark/runs/dixit_2016_perturbseq",TRUE,FALSE,0,0,0,0,0,"method_scores.csv;ground_truth.csv;covariates.csv"
+"norman_2019_combo","active","ready_smoke_scale","carf_benchmark/runs/norman_2019_combo",TRUE,TRUE,50814,15075,15075,4,3,""
+"replogle_2022_genome_scale","active","ready_smoke_scale","carf_benchmark/runs/replogle_2022_genome_scale",TRUE,TRUE,45171,15057,15057,3,3,""
+"frangieh_2021_cite_seq","active","pending_download","carf_benchmark/runs/frangieh_2021_cite_seq",TRUE,FALSE,0,0,0,0,0,"method_scores.csv;ground_truth.csv;covariates.csv"

@@ -1,0 +1,9 @@
+"metric","value"
+"Spearman_rho_rank",0.906436076711882
+"Spearman_rho_shift",0.906436384835511
+"Top20_overlap_pct",80
+"Top50_overlap_pct",84
+"Top100_overlap_pct",73
+"N_common_genes",3989
+"N_10cell_unique",3989
+"N_50cell_unique",3989

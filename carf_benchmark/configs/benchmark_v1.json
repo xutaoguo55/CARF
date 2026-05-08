@@ -1,0 +1,90 @@
+{
+  "benchmark_id": "carf_benchmark_v1",
+  "benchmark_version": "1.0.0",
+  "created_by": "CARF authors",
+  "description": "Confounder-audit benchmark layer for perturbation prediction methods.",
+  "datasets": [
+    {
+      "dataset_id": "wwox_dlbcl_v1",
+      "perturbation_id": "WWOX_silencing",
+      "status": "active",
+      "run_dir": "carf_benchmark/runs/wwox_dlbcl_v1"
+    },
+    {
+      "dataset_id": "adamson_2016_perturbseq",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "ready_smoke_scale",
+      "run_dir": "carf_benchmark/runs/adamson_2016_perturbseq"
+    },
+    {
+      "dataset_id": "dixit_2016_perturbseq",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "pending_download",
+      "run_dir": "carf_benchmark/runs/dixit_2016_perturbseq"
+    },
+    {
+      "dataset_id": "norman_2019_combo",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "ready_smoke_scale",
+      "run_dir": "carf_benchmark/runs/norman_2019_combo"
+    },
+    {
+      "dataset_id": "replogle_2022_genome_scale",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "ready_smoke_scale",
+      "run_dir": "carf_benchmark/runs/replogle_2022_genome_scale"
+    },
+    {
+      "dataset_id": "frangieh_2021_cite_seq",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "pending_download",
+      "run_dir": "carf_benchmark/runs/frangieh_2021_cite_seq"
+    },
+    {
+      "dataset_id": "drug_perturbation_hsts",
+      "perturbation_id": "multiple",
+      "status": "active",
+      "inputs_status": "ready",
+      "run_dir": "carf_benchmark/runs/drug_perturbation_hsts"
+    }
+  ],
+  "registries": {
+    "datasets": "carf_benchmark/registry/datasets.csv",
+    "models": "carf_benchmark/registry/models.csv"
+  },
+  "schema": {
+    "method_scores": "carf_benchmark/schema/method_scores.schema.json",
+    "ground_truth": "carf_benchmark/schema/ground_truth.schema.json",
+    "covariates": "carf_benchmark/schema/covariates.schema.json",
+    "benchmark_run": "carf_benchmark/schema/benchmark_run.schema.json"
+  },
+  "metrics": {
+    "k_values": [
+      10,
+      25,
+      50,
+      75,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "pce_alpha": 0.5,
+    "diagnostic_thresholds": {
+      "high_expression_bias_ebs": 0.5,
+      "low_deconfounded_signal_psr": 1.0,
+      "high_coexpression_dependence_cii": 0.25
+    },
+    "threshold_status": "heuristic_not_pass_fail"
+  },
+  "outputs": {
+    "leaderboard_csv": "carf_benchmark/leaderboard/leaderboard.csv",
+    "leaderboard_md": "carf_benchmark/leaderboard/leaderboard.md",
+    "audit_matrix_csv": "carf_benchmark/leaderboard/audit_matrix.csv"
+  }
+}

@@ -1,0 +1,14 @@
+model_id,model_name,model_family,model_version,status,adapter,score_type,notes
+pearson,Pearson correlation,statistical_baseline,v1,active,builtin_correlation,correlation,Genome-wide simple co-expression baseline
+linear_model,Linear model,statistical_baseline,v1,active,builtin_linear_model,regression_beta,Genome-wide WWOX predictor baseline
+sctenifoldknk,scTenifoldKnk,network_model,v1,active,builtin_sctenifoldknk,z_score,Virtual knockout tensor/network method
+geneformer_50cell,Geneformer V2 50-cell,foundation_model,local_checkpoint,active,builtin_geneformer,cosine_shift,Seed Geneformer perturbation output
+scgpt,scGPT,foundation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts scGPT native gene-score or predicted-expression outputs to CARF method_scores
+scfoundation,scFoundation,foundation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts scFoundation native gene-score or predicted-expression outputs to CARF method_scores
+uce,UCE,foundation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts UCE native gene-score or predicted-expression outputs to CARF method_scores
+scbert,scBERT,foundation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts scBERT native gene-score or predicted-expression outputs to CARF method_scores
+gears,GEARS,deep_perturbation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts GEARS predicted-expression outputs to CARF method_scores
+cpa,CPA,deep_perturbation_model,external_native_output,active_adapter,carf_benchmark/adapters/run_adapter.py,predicted_delta,Converts CPA predicted-expression outputs to CARF method_scores
+mean_baseline,Mean prediction baseline,statistical_baseline,control_mean_delta_zero,active_adapter,carf_benchmark/datasets/prepare_public_perturbseq.py,predicted_delta,Generated for public single-cell perturbation datasets during CARF input preparation
+mean_expression_baseline,Mean expression baseline,statistical_baseline,control_mean_expression,active_adapter,carf_benchmark/datasets/prepare_public_perturbseq.py,mean_expression,Expression-only baseline for auditing expression abundance bias in public perturbation datasets
+control_coexpression_baseline,Control co-expression baseline,statistical_baseline,control_target_coexpression,active_adapter,carf_benchmark/datasets/prepare_public_perturbseq.py,correlation,Target co-expression baseline for auditing co-expression shortcut behavior in public perturbation datasets

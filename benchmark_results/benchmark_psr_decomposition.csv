@@ -1,0 +1,9 @@
+"method","metric","k_family","value"
+"Geneformer","cfPSR",3,1
+"Geneformer","cfPSR",5,1
+"Geneformer","cfPSR",10,1
+"Geneformer","cfPSR",20,1
+"scTenifoldKnk","cfPSR",3,1
+"scTenifoldKnk","cfPSR",5,1
+"scTenifoldKnk","cfPSR",10,1
+"scTenifoldKnk","cfPSR",20,1

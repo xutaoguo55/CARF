@@ -1,0 +1,14 @@
+"metric","value"
+"rank_rho_10_50",0.906436076711882
+"top20_overlap_pct",80
+"top100_overlap_pct",73
+"psr_k10_50cell",NA
+"psr_k10_10cell",NA
+"ebs_50cell",0.616777345071855
+"ebs_10cell",0.550062914176858
+"expr_r2_50cell",0.159616579634358
+"expr_r2_10cell",0.152962646635338
+"psr_k10_boot_mean",71.327717994228
+"psr_k10_boot_sd",29.030223566148
+"psr_k10_boot_ci_lower",27.7383333333333
+"psr_k10_boot_ci_upper",127.65375

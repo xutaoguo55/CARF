@@ -1,0 +1,7 @@
+"analysis","effect","estimate","ci_lower","ci_upper","p_value","prop_mediated"
+"Mediation 1: Validation → Expression → Score","ACME (Expr-mediated)",0.890229118208375,0.465233673056591,1.38068008595627,0,0.631195585659111
+"Mediation 1: Validation → Expression → Score","ADE (Direct)",0.520156407981221,0.259025854737685,0.769491958612255,0,NA
+"Mediation 1: Validation → Expression → Score","Total Effect",1.4103855261896,0.800658455234317,2.04788666787873,0,NA
+"Mediation 2: Expression → Family → Score","ACME (Family-mediated)",0,-0.000561063718471233,0,1,0
+"Mediation 2: Expression → Family → Score","ADE (Direct)",-0.272145638104796,-0.285140378924794,-0.259516976862836,0,NA
+"Mediation 2: Expression → Family → Score","Total Effect",-0.272145638104796,-0.285203141950337,-0.259516976862836,0,NA

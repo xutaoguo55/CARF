@@ -1,0 +1,4 @@
+"metric","risk_ratio","evalue","interpretation"
+"scTenifoldKnk PSR k=10 (original)",10.5352941176471,20.5581244578095,"Moderate E-value; genuine within-family discrimination survives confounding"
+"scTenifoldKnk PSR k=10 (after EDR)",0,1,"EDR reduces but does not eliminate signal"
+"scTenifoldKnk EBS",1.34289978679958,2.02148659081716,"Moderate expression bias; substantially lower than Geneformer's EBS=0.62"

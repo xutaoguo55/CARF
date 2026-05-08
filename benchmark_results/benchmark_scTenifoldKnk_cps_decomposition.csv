@@ -1,0 +1,5 @@
+"Component","Variance_Explained_Pct","Type"
+"Expression Level",2.99981440806291,"Confounder"
+"Gene Family Membership",0.9190370926274,"Confounder"
+"|r_WWOX| (co-expression)",0.337227243161959,"Confounder"
+"Residual (CPS)",95.7439212561477,"Perturbation Signal"

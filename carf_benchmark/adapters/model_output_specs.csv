@@ -1,0 +1,11 @@
+model_id,accepted_native_mode,required_native_columns_or_objects,default_score_column,carf_score_type,notes
+scgpt,gene-score-csv,gene_symbol plus predicted_delta,predicted_delta,predicted_delta,Use this when scGPT emits decoded post-perturbation delta or ranked affected genes
+scgpt,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,Use this when scGPT emits post-perturbation expression for cells
+scfoundation,gene-score-csv,gene_symbol plus predicted_delta,predicted_delta,predicted_delta,Use this when scFoundation emits decoder delta or gene-level perturbation effect
+scfoundation,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,Use this when scFoundation emits post-perturbation expression for cells
+uce,gene-score-csv,gene_symbol plus predicted_delta,predicted_delta,predicted_delta,Use this when UCE embedding/decoder pipeline emits gene-level effects
+uce,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,Use this when a UCE decoder emits post-perturbation expression
+scbert,gene-score-csv,gene_symbol plus predicted_delta,predicted_delta,predicted_delta,Use this when scBERT emits decoded gene-level effects
+scbert,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,Use this when scBERT emits post-perturbation expression
+gears,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,GEARS native predictions are usually expression matrices for requested perturbations
+cpa,expression-delta,predicted expression matrix plus baseline/control expression matrix,,predicted_delta,CPA native predictions are usually expression matrices for requested perturbations

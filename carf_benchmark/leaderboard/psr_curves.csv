@@ -1,0 +1,273 @@
+"benchmark_id","dataset_id","perturbation_id","model_id","model_name","k","PSR"
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",10,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",25,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",50,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",75,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",100,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",200,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",500,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","pearson","Pearson correlation",1000,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",10,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",25,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",50,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",75,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",100,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",200,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",500,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","linear_model","Linear model",1000,0
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",10,11.7647058823529
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",25,4.70588235294118
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",50,2.35294117647059
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",75,1.56862745098039
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",100,3.52941176470588
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",200,3.52941176470588
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",500,1.64705882352941
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","sctenifoldknk","scTenifoldKnk",1000,0.823529411764706
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",10,70.3941176470588
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",25,56.3152941176471
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",50,32.8505882352941
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",75,21.9003921568627
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",100,16.4252941176471
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",200,9.38588235294118
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",500,3.75435294117647
+"carf_benchmark_v1","wwox_dlbcl_v1","WWOX_silencing","geneformer_50cell","Geneformer V2 50-cell",1000,2.11182352941176
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",10,6.0240614334471
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",25,6.54040955631399
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",50,6.88464163822526
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",75,6.65515358361775
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",100,5.93800341296928
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",200,5.29256825938567
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",500,3.75212969283276
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","mean_expression_baseline","Mean expression baseline",1000,2.86573208191126
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",10,3.44232081911263
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",25,4.13078498293515
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",50,3.270204778157
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",75,2.7538566552901
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",100,2.92597269624573
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",200,2.15145051194539
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",500,1.61789078498294
+"carf_benchmark_v1","adamson_2016_perturbseq","ASCC3","control_coexpression_baseline","Control co-expression baseline",1000,1.56625597269625
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",10,13.6297297297297
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",25,7.26918918918919
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",50,8.17783783783784
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",75,9.69225225225225
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",100,9.99513513513514
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",200,9.31364864864865
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",500,6.36054054054054
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","mean_expression_baseline","Mean expression baseline",1000,4.17978378378378
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",10,9.08648648648649
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",25,5.45189189189189
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",50,2.72594594594595
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",75,2.42306306306306
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",100,1.8172972972973
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",200,2.49878378378378
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",500,1.99902702702703
+"carf_benchmark_v1","adamson_2016_perturbseq","SEC61B","control_coexpression_baseline","Control co-expression baseline",1000,1.8172972972973
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",10,3.27231434751262
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",25,3.19959625090123
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",50,2.98144196106705
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",75,2.76328767123288
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",100,2.76328767123288
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",200,2.78146719538572
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",500,2.60330785868782
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","mean_expression_baseline","Mean expression baseline",1000,2.2942559480894
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",10,2.5451333813987
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",25,2.18154289834174
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",50,2.10882480173035
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",75,2.03610670511896
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",100,2.14518385003605
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",200,1.98156813266042
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",500,1.59252631578947
+"carf_benchmark_v1","adamson_2016_perturbseq","DNAJC19","control_coexpression_baseline","Control co-expression baseline",1000,1.40709516943043
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",10,4.93453355155483
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",25,6.25040916530278
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",50,5.09901800327332
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",75,4.93453355155483
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",100,4.85229132569558
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",200,4.44108019639935
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",500,3.55286415711948
+"carf_benchmark_v1","norman_2019_combo","KLF1","mean_expression_baseline","Mean expression baseline",1000,2.72221767594108
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",10,6.57937806873977
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",25,4.27659574468085
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",50,4.11211129296236
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",75,3.28968903436989
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",100,2.7962356792144
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",200,2.0971767594108
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",500,1.74353518821604
+"carf_benchmark_v1","norman_2019_combo","KLF1","control_coexpression_baseline","Control co-expression baseline",1000,1.5626022913257
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",10,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",25,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",50,10.05
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",75,6.7
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",100,10.05
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",200,5.025
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",500,4.02
+"carf_benchmark_v1","norman_2019_combo","BAK1","mean_expression_baseline","Mean expression baseline",1000,2.01
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",10,50.25
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",25,20.1
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",50,10.05
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",75,6.7
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",100,5.025
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",200,5.025
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",500,2.01
+"carf_benchmark_v1","norman_2019_combo","BAK1","control_coexpression_baseline","Control co-expression baseline",1000,1.5075
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",10,2.62783265543289
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",25,2.45264381173736
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",50,2.62783265543289
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",75,2.64729808251017
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",100,2.59863451481697
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",200,2.61323358512493
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",500,2.32417199302731
+"carf_benchmark_v1","norman_2019_combo","CEBPE","mean_expression_baseline","Mean expression baseline",1000,1.93291690877397
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",10,1.45990703079605
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",25,1.63509587449157
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",50,1.63509587449157
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",75,1.82975014526438
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",100,1.98547356188263
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",200,1.8832800697269
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",500,1.85700174317257
+"carf_benchmark_v1","norman_2019_combo","CEBPE","control_coexpression_baseline","Control co-expression baseline",1000,1.79276583381755
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",10,2.74418985270049
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",25,2.4392798690671
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",50,2.50026186579378
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",75,2.39862520458265
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",100,2.25633387888707
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",200,1.890441898527
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",500,1.38429132569558
+"carf_benchmark_v1","norman_2019_combo","KLF1","gears","GEARS",1000,0.96656464811784
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",10,0
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",25,22.356
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",50,14.904
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",75,9.936
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",100,7.452
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",200,3.726
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",500,2.6082
+"carf_benchmark_v1","norman_2019_combo","BAK1","gears","GEARS",1000,1.3041
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",10,1.08251016850668
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",25,1.08251016850668
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",50,1.08251016850668
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",75,1.06807669959326
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",100,1.06085996513655
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",200,1.06085996513655
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",500,0.987249273678094
+"carf_benchmark_v1","norman_2019_combo","CEBPE","gears","GEARS",1000,0.773994770482278
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",10,4.7412955465587
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",25,4.87676113360324
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",50,4.87676113360324
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",75,4.51551956815115
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",100,4.60582995951417
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",200,3.9285020242915
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",500,2.80413765182186
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","mean_expression_baseline","Mean expression baseline",1000,2.09294331983806
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",10,3.38663967611336
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",25,2.43838056680162
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",50,2.16744939271255
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",75,2.25775978407557
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",100,2.23518218623482
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",200,1.93038461538462
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",500,1.62558704453441
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS+HUS1","control_coexpression_baseline","Control co-expression baseline",1000,1.45625506072874
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",10,83.65
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",25,33.46
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",50,33.46
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",75,33.46
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",100,33.46
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",200,16.73
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",500,6.692
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","mean_expression_baseline","Mean expression baseline",1000,3.346
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",10,83.65
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",25,33.46
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",50,16.73
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",75,11.1533333333333
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",100,8.365
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",200,4.1825
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",500,3.346
+"carf_benchmark_v1","replogle_2022_genome_scale","HUS1","control_coexpression_baseline","Control co-expression baseline",1000,1.673
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",10,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",25,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",50,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",75,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",100,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",200,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",500,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_baseline","Mean prediction baseline",1000,0
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",10,5.83604651162791
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",25,4.96063953488372
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",50,4.96063953488372
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",75,4.66883720930233
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",100,4.52293604651163
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",200,3.57457848837209
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",500,2.59704069767442
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","mean_expression_baseline","Mean expression baseline",1000,2.12286191860465
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",10,4.37703488372093
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",25,3.79343023255814
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",50,2.77212209302326
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",75,3.01529069767442
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",100,2.55327034883721
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",200,1.93319040697674
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",500,1.5903226744186
+"carf_benchmark_v1","replogle_2022_genome_scale","FDPS","control_coexpression_baseline","Control co-expression baseline",1000,1.48089680232558

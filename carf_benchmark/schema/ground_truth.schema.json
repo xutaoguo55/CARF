@@ -1,0 +1,34 @@
+{
+  "name": "CARF ground truth labels",
+  "version": "1.0.0",
+  "format": "csv",
+  "primary_key": ["dataset_id", "perturbation_id", "gene_symbol"],
+  "required_columns": [
+    "dataset_id",
+    "perturbation_id",
+    "gene_symbol",
+    "is_positive",
+    "label_source"
+  ],
+  "recommended_columns": [
+    "gene_id",
+    "evidence_type",
+    "effect_direction",
+    "fdr",
+    "split",
+    "notes"
+  ],
+  "column_types": {
+    "dataset_id": "string",
+    "perturbation_id": "string",
+    "gene_id": "string",
+    "gene_symbol": "string",
+    "is_positive": "boolean",
+    "label_source": "string",
+    "evidence_type": "string",
+    "effect_direction": "string",
+    "fdr": "number",
+    "split": "string",
+    "notes": "string"
+  }
+}

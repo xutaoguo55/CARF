@@ -1,0 +1,52 @@
+{
+  "name": "CARF method scores",
+  "version": "1.0.0",
+  "format": "csv",
+  "primary_key": ["dataset_id", "perturbation_id", "model_id", "gene_symbol"],
+  "required_columns": [
+    "dataset_id",
+    "perturbation_id",
+    "model_id",
+    "model_name",
+    "gene_symbol",
+    "score",
+    "score_abs",
+    "rank",
+    "scope_included",
+    "score_type",
+    "source_file"
+  ],
+  "recommended_columns": [
+    "gene_id",
+    "direction",
+    "model_family",
+    "model_version",
+    "adapter_version"
+  ],
+  "column_types": {
+    "dataset_id": "string",
+    "perturbation_id": "string",
+    "model_id": "string",
+    "model_name": "string",
+    "gene_id": "string",
+    "gene_symbol": "string",
+    "score": "number",
+    "score_abs": "number",
+    "rank": "integer",
+    "scope_included": "boolean",
+    "score_type": "string",
+    "source_file": "string"
+  },
+  "constraints": {
+    "rank_min": 1,
+    "score_type_values": [
+      "correlation",
+      "regression_beta",
+      "z_score",
+      "cosine_shift",
+      "predicted_delta",
+      "mean_expression",
+      "other"
+    ]
+  }
+}

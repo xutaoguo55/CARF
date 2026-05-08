@@ -1,0 +1,5 @@
+"method","n_genes","validated_found","validated_total","mean_rank","median_rank","top75_hits","top100_hits"
+"Pearson",21655,17,17,13695.6470588235,15436,0,0
+"Linear Model",21655,17,17,13695.6470588235,15436,0,0
+"scTenifoldKnk",2000,7,17,299.428571428571,52,6,6
+"Geneformer",3989,12,17,524.416666666667,28.5,7,7

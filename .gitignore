@@ -70,6 +70,9 @@ gene2go_all.pkl
 Rplots.pdf
 figures/
 
+# Paper submission files (not part of software package)
+SUBMISSION_CHECKLIST.md
+
 # Manuscript and figures (submitted via journal system, not GitHub)
 manuscript/
 figures_gigascience/

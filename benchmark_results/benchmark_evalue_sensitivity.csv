@@ -1,0 +1,6 @@
+"metric","risk_ratio","evalue","interpretation"
+"Geneformer PSR k=10 (original)",70.39,140.27821145229,"High E-value suggests robust IF confounders were unknown — but they are measured"
+"Geneformer EDR PSR k=10",0,1,"After adjustment, no signal remains"
+"scTenifoldKnk PSR k=10",23.53,46.5545716572535,"Moderate E-value; within-family discrimination genuine"
+"CPS discrimination",1,1,"Null finding confirmed; no association to explain away"
+"Geneformer EBS",4.26315789473684,7.99295109821612,"Expression level is sufficiently associated to explain perturbation signal"

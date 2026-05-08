@@ -1,0 +1,52 @@
+{
+  "model_dir": "/private/tmp/Geneformer",
+  "dataset_path": "/private/tmp/geneformer_test/tokenized_final/GSE10846_filtered.dataset",
+  "token_dictionary": "/private/tmp/Geneformer/geneformer/token_dictionary_gc104M.pkl",
+  "gene_name_dictionary": "/private/tmp/Geneformer/geneformer/gene_name_id_dict_gc104M.pkl",
+  "wwox_ensembl": "ENSG00000186153",
+  "wwox_token_id": 15444,
+  "dataset_rows": 420,
+  "embedding_cells_requested": 8,
+  "embedding_cells_used": 8,
+  "attention_cells_requested": 4,
+  "attention_cells_used": 4,
+  "attention_window": 512,
+  "density_k": 20,
+  "device": "cpu",
+  "n_raw_embedding_tokens": 3990,
+  "n_raw_attention_tokens": 1195,
+  "attention_windows": [
+    {
+      "cell_index": 0,
+      "sequence_length": 3992,
+      "window_start": 3480,
+      "window_end": 3992,
+      "wwox_position_full": 3946,
+      "wwox_position_window": 466
+    },
+    {
+      "cell_index": 139,
+      "sequence_length": 3992,
+      "window_start": 3480,
+      "window_end": 3992,
+      "wwox_position_full": 3930,
+      "wwox_position_window": 450
+    },
+    {
+      "cell_index": 279,
+      "sequence_length": 3992,
+      "window_start": 3480,
+      "window_end": 3992,
+      "wwox_position_full": 3953,
+      "wwox_position_window": 473
+    },
+    {
+      "cell_index": 419,
+      "sequence_length": 3992,
+      "window_start": 3480,
+      "window_end": 3992,
+      "wwox_position_full": 3847,
+      "wwox_position_window": 367
+    }
+  ]
+}

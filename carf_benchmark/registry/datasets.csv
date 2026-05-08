@@ -1,0 +1,7 @@
+dataset_id,dataset_name,modality,organism,perturbation_type,technology,accession,status,notes
+wwox_dlbcl_v1,WWOX silencing in DLBCL,bulk transcriptomics,Homo sapiens,natural tumor suppressor silencing,Affymetrix microarray,GSE10846;GSE32918;GSE87371,active,Seed CARF benchmark in this repository
+adamson_2016_perturbseq,Adamson Perturb-seq,single-cell RNA-seq,Homo sapiens,CRISPRi,Perturb-seq,GSE90546,active,Public h5ad source manifest and CARF preparation script are active; inputs are generated after download
+dixit_2016_perturbseq,Dixit Perturb-seq,single-cell RNA-seq,Homo sapiens,CRISPR perturbation,Perturb-seq,GSE90063,active,Public h5ad source manifest and CARF preparation script are active; inputs are generated after download
+norman_2019_combo,Norman combinatorial Perturb-seq,single-cell RNA-seq,Homo sapiens,single and combinatorial CRISPRa,Perturb-seq,GSE133344,active,Public h5ad source manifest and CARF preparation script are active; inputs are generated after download
+replogle_2022_genome_scale,Replogle genome-scale Perturb-seq,single-cell RNA-seq,Homo sapiens,CRISPRi,Perturb-seq,GSE194122,active,Public h5ad source manifest and CARF preparation script are active; inputs are generated after download
+frangieh_2021_cite_seq,Frangieh perturb-CITE-seq,single-cell multiome,Homo sapiens,CRISPR perturbation,Perturb-CITE-seq,SCP1064,active,Public h5ad source manifest and CARF preparation script are active; inputs are generated after download

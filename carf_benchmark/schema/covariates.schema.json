@@ -1,0 +1,32 @@
+{
+  "name": "CARF gene-level covariates",
+  "version": "1.0.0",
+  "format": "csv",
+  "primary_key": ["dataset_id", "perturbation_id", "gene_symbol"],
+  "required_columns": [
+    "dataset_id",
+    "gene_symbol",
+    "mean_expression",
+    "abs_coexpression_with_perturbed_gene",
+    "gene_family"
+  ],
+  "recommended_columns": [
+    "gene_id",
+    "sd_expression",
+    "cv_expression",
+    "perturbation_id",
+    "platform_gene_in_scope"
+  ],
+  "column_types": {
+    "dataset_id": "string",
+    "perturbation_id": "string",
+    "gene_id": "string",
+    "gene_symbol": "string",
+    "mean_expression": "number",
+    "sd_expression": "number",
+    "cv_expression": "number",
+    "abs_coexpression_with_perturbed_gene": "number",
+    "gene_family": "string",
+    "platform_gene_in_scope": "boolean"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "CARF benchmark run manifest",
+  "version": "1.0.0",
+  "format": "json",
+  "required_fields": [
+    "benchmark_id",
+    "benchmark_version",
+    "dataset_id",
+    "perturbation_id",
+    "created_by",
+    "inputs",
+    "metrics"
+  ],
+  "inputs": {
+    "required_fields": [
+      "method_scores",
+      "ground_truth",
+      "covariates"
+    ]
+  },
+  "metrics": {
+    "default_k_values": [10, 25, 50, 75, 100, 200, 500, 1000],
+    "default_pce_alpha": 0.5,
+    "required_outputs": [
+      "leaderboard.csv",
+      "leaderboard.md",
+      "audit_matrix.csv"
+    ]
+  }
+}
