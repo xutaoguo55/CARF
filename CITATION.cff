@@ -10,6 +10,11 @@ authors:
     orcid: "https://orcid.org/0000-0002-7201-8092"
 repository-code: "https://github.com/xutaoguo55/CARF"
 url: "https://github.com/xutaoguo55/CARF"
+doi: "10.5281/zenodo.20088473"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20088473"
+    description: "Zenodo archive of the CARF codebase"
 abstract: "CARF implements seven quantitative metrics and six confounder-adjusted diagnostics to reveal the confounding architecture underlying perturbation inference benchmarks, distinguishing methods that capture perturbation biology from those that capture confounds."
 keywords:
   - benchmark methodology

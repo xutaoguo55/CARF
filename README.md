@@ -8,7 +8,7 @@ A general-purpose methodology for revealing the confounding architecture underly
 
 If you use CARF in your research, please cite:
 
-> Guo X. CARF: A Confounder-Adjusted Ranking Framework for Perturbation Inference Benchmarks — Demonstrated on WWOX Tumor Suppressor Silencing in Diffuse Large B-Cell Lymphoma. Zenodo. DOI: [TBD]
+> Guo X. CARF: A Confounder-Adjusted Ranking Framework for Perturbation Inference Benchmarks — Demonstrated on WWOX Tumor Suppressor Silencing in Diffuse Large B-Cell Lymphoma. Zenodo. DOI: [10.5281/zenodo.20088473](https://doi.org/10.5281/zenodo.20088473)
 
 ## Overview
 
