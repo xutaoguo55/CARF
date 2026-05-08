@@ -27,19 +27,19 @@ CARF provides seven quantitative metrics and six confounder-adjusted diagnostics
 - Required R packages: `ggplot2`, `patchwork`, `reshape2`, `scales`, `ggrepel`, `dplyr`
 - Geneformer dependencies: see `requirements-carf.txt`
 
-### Reproduce main figures
+### Reproduce results
 
 ```bash
 cd code
-Rscript 14_generate_figure1.R       # Figure 1: CARF overview
-Rscript 09_generate_figures.R       # Figures 2–7: Main results
-Rscript 11_generate_causal_figures.R # Figure 8: Causal framework
-Rscript 16_carf_report_card.R       # Figure 9: Report card
-Rscript 15_expression_distance_baseline.R  # Figure S1
-Rscript 17_embedding_geometry_validation.R # Figure S2
+Rscript 14_generate_figure1.R       # CARF overview
+Rscript 09_generate_figures.R       # Main results
+Rscript 11_generate_causal_figures.R # Causal framework
+Rscript 16_carf_report_card.R       # Report card
+Rscript 15_expression_distance_baseline.R  # Expression distance baseline
+Rscript 17_embedding_geometry_validation.R # Embedding geometry validation
 ```
 
-All figures are output to `figures_gigascience/` at 170mm width, 300 DPI, with Okabe-Ito colorblind-friendly palette.
+All outputs are generated at 170mm width, 300 DPI, with Okabe-Ito colorblind-friendly palette.
 
 ### Reproduce full benchmark
 
