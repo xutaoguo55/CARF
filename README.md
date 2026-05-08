@@ -79,22 +79,19 @@ Benchmark results (CSV files) are in `benchmark_results/`.
 │   ├── 05_cross_platform_validation.R
 │   ├── 06_analyze_failure_modes.R
 │   ├── 07_compute_benchmark_metrics.R
-│   ├── 09_generate_figures.R       # Figures 2–7
+│   ├── 09_generate_figures.R
 │   ├── 10_causal_framework.R
-│   ├── 11_generate_causal_figures.R # Figure 8
-│   ├── 14_generate_figure1.R       # Figure 1
+│   ├── 11_generate_causal_figures.R
+│   ├── 14_generate_figure1.R
 │   ├── 15_expression_distance_baseline.R
 │   ├── 16_carf_report_card.R
 │   ├── 17_embedding_geometry_validation.R
 │   ├── 18_compute_cbs_anchor.R
 │   ├── 19_geneformer_stability.R
-│   └── common_config.R             # Shared config
+│   └── common_config.R
 ├── benchmark_results/              # All CSV output files
-├── figures_gigascience/            # Generated figures (PDF, 170mm, 300DPI)
-├── manuscript/                     # Manuscript draft and supplementary materials
-├── supplementary_tables/           # Tables S1–S12
-├── data/                           # Input data and metadata
-├── tests/                          # Unit tests (to be added)
+├── carf_benchmark/                 # Benchmark framework and leaderboard
+├── tests/                          # Unit tests
 ├── Makefile                        # Reproducible pipeline
 ├── Dockerfile                      # Containerized environment
 ├── requirements-carf.txt           # Python dependencies
