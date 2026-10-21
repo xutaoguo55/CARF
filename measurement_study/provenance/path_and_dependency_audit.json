@@ -1,0 +1,267 @@
+{
+  "source_executable_absolute_user_paths_found": [],
+  "path_dependencies": [
+    {
+      "file": "source_snapshot/reconstruction/io_utils.py",
+      "line": 20,
+      "text": "    entries = json.loads((ROOT / \"evidence/recovery_manifest.json\").read_text())[\"external_inputs\"]"
+    },
+    {
+      "file": "source_snapshot/reconstruction/run_measurement_model.R",
+      "line": 7,
+      "text": "root <- normalizePath(\".\", mustWork = TRUE)"
+    },
+    {
+      "file": "source_snapshot/reconstruction/run_measurement_model.R",
+      "line": 8,
+      "text": ".libPaths(c(file.path(root, \"reconstruction\", \".Rlib\"), .libPaths()))"
+    },
+    {
+      "file": "source_snapshot/reconstruction/run_sctenifoldknk_transcriptome_wide.R",
+      "line": 10,
+      "text": "project_root <- normalizePath(\".\", mustWork = TRUE)"
+    },
+    {
+      "file": "source_snapshot/reconstruction/run_sctenifoldknk_transcriptome_wide.R",
+      "line": 11,
+      "text": "lib_dir <- file.path(project_root, \"reconstruction\", \".Rlib\")"
+    }
+  ],
+  "imports": {
+    "acquire_replogle_rpe1.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "urllib"
+    ],
+    "carf_core.py": [
+      "__future__",
+      "numpy",
+      "scipy"
+    ],
+    "evaluate_heldout_linear.py": [
+      "__future__",
+      "carf_core",
+      "datetime",
+      "h5py",
+      "hashlib",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "platform"
+    ],
+    "evaluate_pearson_measurement.py": [
+      "__future__",
+      "carf_core",
+      "datetime",
+      "io_utils",
+      "json",
+      "measurement_diagnostic_pilot",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "platform",
+      "scipy"
+    ],
+    "evaluate_rpe1_measurement.py": [
+      "carf_core",
+      "datetime",
+      "evaluate_heldout_linear",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_rpe1_measurement_models",
+      "scipy"
+    ],
+    "export_rpe1_safe_models.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "io",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "zipfile"
+    ],
+    "io_utils.py": [
+      "h5py",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ],
+    "measurement_diagnostic_pilot.py": [
+      "__future__",
+      "argparse",
+      "carf_core",
+      "datetime",
+      "h5py",
+      "hashlib",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "shutil",
+      "subprocess",
+      "sys"
+    ],
+    "plot_rpe1_measurement.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "prepare_rpe1_measurement.py": [
+      "__future__",
+      "datetime",
+      "gzip",
+      "h5py",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "re",
+      "scipy",
+      "sys",
+      "verify_rpe1_contents"
+    ],
+    "prepare_sctenifold_input.py": [
+      "__future__",
+      "datetime",
+      "h5py",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy"
+    ],
+    "rank_identity_specificity.py": [
+      "__future__",
+      "carf_core",
+      "datetime",
+      "h5py",
+      "hashlib",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_pilot"
+    ],
+    "resume_rpe1_chunks.py": [
+      "acquire_replogle_rpe1",
+      "concurrent",
+      "json",
+      "pathlib",
+      "time",
+      "urllib"
+    ],
+    "review_heldout_linear.py": [
+      "io_utils",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "review_measurement_pilot.py": [
+      "io_utils",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ],
+    "run_library_calibration.py": [
+      "argparse",
+      "carf_core",
+      "datetime",
+      "h5py",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_pilot"
+    ],
+    "run_pilot.py": [
+      "__future__",
+      "argparse",
+      "carf_core",
+      "datetime",
+      "h5py",
+      "hashlib",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "run_rpe1_measurement_models.py": [
+      "__future__",
+      "datetime",
+      "evaluate_heldout_linear",
+      "evaluate_pearson_measurement",
+      "h5py",
+      "hashlib",
+      "io_utils",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "platform",
+      "scipy",
+      "subprocess"
+    ],
+    "verify_rpe1_contents.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "datetime",
+      "h5py",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  "active_portable_entrypoints": [
+    "verify_release.py",
+    "source_snapshot/reconstruction/plot_rpe1_measurement.py --evaluation ... --review-summary ... --out ..."
+  ],
+  "legacy_dependency": "io_utils.input_path reads external_inputs from ROOT/evidence/recovery_manifest.json. That private legacy path map and large K562 inputs are not bundled. Full K562 rerun is explicitly outside tested scope.",
+  "r_dependency": "run_measurement_model.R expects repository-root working directory and reconstruction/.Rlib or a compatible installed R library; native R runtime is recorded, not bundled.",
+  "provenance_paths": "Public metadata views replace originating absolute paths with source-relative paths or placeholders. public_artifact_mapping.json records original and public digests; scientific source/data digests are preserved.",
+  "v2_active_portable_entrypoints": [
+    "verify_release.py",
+    "verify_posthoc_review.py --output ...",
+    "source_snapshot/reconstruction/plot_rpe1_measurement.py --evaluation ... --review-summary ... --out ..."
+  ],
+  "v2_posthoc_scope": "Recompute all table metrics from packaged safe scores/references/covariates. Original 512 evaluation NPZs and 256 posthoc context NPZs are omitted and are not compared by the compact verifier.",
+  "v2_journal_export": "The overall verifier runs the unchanged exporter in an external staging tree holding copies of the included evaluation and original figure files.",
+  "v2_raw_rerun_documentation_corrections": [
+    "copy source_snapshot/. into a separate empty directory",
+    "capture absolute review venv interpreter before changing directory"
+  ]
+}

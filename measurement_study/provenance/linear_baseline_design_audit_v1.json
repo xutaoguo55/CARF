@@ -1,0 +1,121 @@
+{
+  "status": "design_audit_completed_before_heldout_linear_fit",
+  "date_utc": "2026-10-21T06:13:52.736215+00:00",
+  "paper": {
+    "doi": "10.1038/s41592-025-02772-6",
+    "official_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12328236/",
+    "methods": "Single perturbation benchmark setup; equations 1 and 3"
+  },
+  "official_repository": "https://github.com/const-ae/linear_perturbation_prediction-Paper",
+  "publication_tag": "publication",
+  "commit": "bfa6eeea2bd145a1af2ec0127a2e808cc38456a9",
+  "source_files": [
+    {
+      "url": "https://raw.githubusercontent.com/const-ae/linear_perturbation_prediction-Paper/bfa6eeea2bd145a1af2ec0127a2e808cc38456a9/benchmark/src/run_linear_pretrained_model.R",
+      "path": "benchmark/src/run_linear_pretrained_model.R",
+      "sha256": "49bda2a46b92c2b0b5bf263b957a3890dbdeff2d4837a94e6b0a397e0e38a6f8",
+      "bytes": 7850
+    },
+    {
+      "url": "https://raw.githubusercontent.com/const-ae/linear_perturbation_prediction-Paper/bfa6eeea2bd145a1af2ec0127a2e808cc38456a9/benchmark/src/run_mean_prediction.R",
+      "path": "benchmark/src/run_mean_prediction.R",
+      "sha256": "09c57717b163f0167aa4f23bc97b0e7322c43984defadd48036e1e681e555d09",
+      "bytes": 2925
+    },
+    {
+      "url": "https://raw.githubusercontent.com/const-ae/linear_perturbation_prediction-Paper/bfa6eeea2bd145a1af2ec0127a2e808cc38456a9/benchmark/src/prepare_perturbation_data.py",
+      "path": "benchmark/src/prepare_perturbation_data.py",
+      "sha256": "5fe1b9541ee2a711bc20dfebc63c354a1b98ced9784c992ed3c185a1a43b5c51",
+      "bytes": 5775
+    },
+    {
+      "url": "https://raw.githubusercontent.com/const-ae/linear_perturbation_prediction-Paper/bfa6eeea2bd145a1af2ec0127a2e808cc38456a9/renv.lock",
+      "path": "renv.lock",
+      "sha256": "39544b0f181ea508ed8e6167179c7b801fc357572656330b61f2c7ef17e8509b",
+      "bytes": 71811
+    }
+  ],
+  "official_implementation": {
+    "input_unit": "per-condition mean of assay X, one gene per row and one condition per column; X averaged by glmGamPoi pseudobulk default rowMeans2",
+    "PCA": "prcomp_irlba(Y_post_train, n=10), center=TRUE across genes within each condition column, scale.=FALSE; gene score matrix G=U times singular values, not just loadings or U",
+    "P": "rows of G for training perturbed target genes; test P rows are held-out target genes measured as readouts in training perturbations",
+    "regression": "Y_change=Y_post-control_mean; subtract per-gene training-condition mean; W=solve(GtG+0.1I,Gt Ycenter P) @ inverse(PtP+0.1I)",
+    "prediction": "G W Ptest.T + per-gene mean(Y_change) + control_mean; for signed delta omit final control_mean addition",
+    "control_training_column": "Official code explicitly adds ctrl to train, includes ctrl in PCA, and uses zero P_ctrl; current adaptation deliberately omits this training column",
+    "line_evidence": {
+      "PCA_defaults_and_dim": "run_linear_pretrained_model.R:8-13,95-118",
+      "ridge_and_center": "run_linear_pretrained_model.R:33-56,149-151",
+      "control": "run_linear_pretrained_model.R:64-66,84,134-136",
+      "prediction": "run_linear_pretrained_model.R:154-160"
+    },
+    "pinned_R_packages": {
+      "irlba": "2.3.5.1",
+      "glmGamPoi": "1.16.0",
+      "SingleCellExperiment": "1.26.0"
+    }
+  },
+  "local_feasibility": [
+    {
+      "dataset": "Adamson",
+      "source_genes": 5043,
+      "frozen_targets": 64,
+      "all_targets_present": true,
+      "missing_targets": [],
+      "A_shape": [
+        97,
+        5043
+      ],
+      "B_shape": [
+        97,
+        5043
+      ],
+      "C_shape": [
+        97,
+        5043
+      ],
+      "responses_sha256": "cf4185633494907ec16c0ca91c3795967cb07b7f824ff03ba76022e4e9f75d40"
+    },
+    {
+      "dataset": "Norman",
+      "source_genes": 5025,
+      "frozen_targets": 58,
+      "all_targets_present": true,
+      "missing_targets": [],
+      "A_shape": [
+        115,
+        5025
+      ],
+      "B_shape": [
+        115,
+        5025
+      ],
+      "C_shape": [
+        115,
+        5025
+      ],
+      "responses_sha256": "5fa59d6b9d5f04ce4c06681c1d95583b657069a5a6c09eaa5abf6fb4da5a7d0d"
+    }
+  ],
+  "conclusions": [
+    "All frozen 64/58 target identities exist in full source genes; exact gene embedding lookup is feasible.",
+    "responses.A alone contains perturbation-minus-matched-control deltas, so its PCA is not the official absolute-expression PCA. Reconstruct pert_A X means.",
+    "Refit all preprocessing, PCA, b and W inside each target fold using training A only. Keeping a held-out target as a measured readout gene is allowed; its perturbed A column is excluded.",
+    "Within-fold test-target mismatch is required; global cross-fold mismatch would mix source predictors trained on the query target.",
+    "Use the published two-sided regularized matrix solve, not a single sklearn Ridge penalty on a Kronecker design."
+  ],
+  "frozen_adaptation": {
+    "protocol_path": "config/heldout_linear_diagnostic_v1.json",
+    "protocol_sha256": "5f869bd5b5ffdc04c5500353d0aa94d8bd5344b2f157534172a083969060bba7",
+    "components": 10,
+    "ridge_each_side": 0.1,
+    "folds": 3,
+    "training_conditions": "training fold perturbations only; no ctrl column",
+    "baseline": "independent existing 400 Dm cells in source X; common subtraction for linear and training-mean predictions",
+    "scope": "PCA uses all 5043/5025 source genes; evaluation uses frozen970/982 candidate scope",
+    "additional_limits": [
+      "Absolute A means come from one technical library pool; Dm baseline is another library pool, so offsets can enter signed prediction errors.",
+      "Supervised training receives other perturbation A outcomes, unlike control-only native/Pearson baselines. Different information budgets preclude a flat superiority claim.",
+      "Upstream all-cell HVG selection remains; architecture adaptation does not reproduce the published dataset split or benchmark numbers."
+    ]
+  }
+}

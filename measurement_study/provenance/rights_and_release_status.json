@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "doi": "10.5281/zenodo.23537089",
+  "repository": "https://github.com/xutaoguo55/CARF",
+  "original_content_license": "CC-BY-NC-4.0",
+  "third_party_exclusions": "THIRD_PARTY_NOTICES.md",
+  "license_scope": "Original project contributions only; upstream CC BY 4.0 data and external dependencies retain their respective rights."
+}

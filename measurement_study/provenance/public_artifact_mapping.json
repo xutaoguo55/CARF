@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "source_package_manifest_sha256": "f98bbb1e5dd21cd402c90fb46c812c28d8dc292084193bef6b67cb7a45dbd22f",
+  "source_archive_sha256": "cba06ff89111359c27f42a3cdd989adbca60f68c6dc77f5e69cbd84088e150d9",
+  "purpose": "Explicit derived public metadata. Original private bytes are not supplied for redacted entries. Source-identity links may resolve to the recorded original digest only after validating the actual public digest.",
+  "changed_files": {
+    "provenance/original_python_runtime.json": {
+      "original_sha256": "11cf9f1742cf8525d1bcb3bb53c016d2ae748ecf88987a3fbe07b5c414bb97e8",
+      "public_sha256": "4fe2443e9f91b160709fdcc5d536aa89142747881a7040660a668e12b2364154",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": false,
+      "changed_json_paths": [
+        "/python_base_prefix"
+      ]
+    },
+    "provenance/development/Adamson_source_audit.json": {
+      "original_sha256": "30c47dca0f091c547b0e171d432070cacd06cc9a699e716a821dc98c9ed74c0a",
+      "public_sha256": "80c9f1d5f7a7caf73d7887615de8d69944503a7d0a158322299d3c610132dd83",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": false,
+      "changed_json_paths": [
+        "/source_path"
+      ]
+    },
+    "provenance/development/Norman_source_audit.json": {
+      "original_sha256": "746399992a718a786fcef4a13a1671eb063830c4b7ce50d1095d9b54ed905f95",
+      "public_sha256": "7371e52aed4cecd40f6d820b292062d520fa5177eb24543bbe34ac41290f52f5",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": false,
+      "changed_json_paths": [
+        "/source_path"
+      ]
+    },
+    "provenance/development/Adamson_file_verification.json": {
+      "original_sha256": "06f759016c8e7e4e1715257d3efba1fccb0d35c70a7cd20f6fc980a408a9148b",
+      "public_sha256": "3bd2aa0c65b18964bdb95bcb4c72029f1252ae2c5ce9e5ccca104d698a7cb349",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": false,
+      "changed_json_paths": [
+        "/local_path"
+      ]
+    },
+    "provenance/development/Norman_file_verification.json": {
+      "original_sha256": "9b6b6bf4cc364ee0b009a8a62e1ea0d774ff297e07338f55641e4611790f6224",
+      "public_sha256": "aea2685c723309db47fbbd54df46bbb8610c587cb577d924c6ec33127fbd12fc",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": false,
+      "changed_json_paths": [
+        "/local_path"
+      ]
+    },
+    "provenance/rpe1_contents_v1/manifest.json": {
+      "original_sha256": "2a917c60cdc470dd1f8bc5b0b595a40f768f4aeb24af83ce82fa1f8698bafb61",
+      "public_sha256": "b9a56ad54801121248ea0e007478a133eea2e2417bfed0e9bb22ec76aa727f09",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": true,
+      "changed_json_paths": [
+        "/sources/0/path",
+        "/sources/1/path"
+      ]
+    },
+    "data/rpe1/preparation/manifest.json": {
+      "original_sha256": "0f8126c0833d70048abff925178649df4f246ae005c01cc755c5e196be44473b",
+      "public_sha256": "472de98480cddfd05e12b1a3341ecbd173f6595e2570ea479068f2ee6ac7ba5e",
+      "reason": "Originating local absolute path replaced with public source-relative or runtime placeholder; no scientific fields changed",
+      "source_identity_redaction": true,
+      "changed_json_paths": [
+        "/source_verification/path"
+      ]
+    },
+    "provenance/original_R_sessionInfo.txt": {
+      "original_sha256": "b4ec426b1cb4845b1f5da40c3adb52a84ac01d16eac593ff2cb9bcf45bfa7934",
+      "public_sha256": "f2734aa279d5923588418c505564f881640f525df6e783abccfe799e4f77b1cc",
+      "reason": "Runtime library location redacted; package/runtime versions unchanged",
+      "source_identity_redaction": false
+    },
+    "provenance/path_and_dependency_audit.json": {
+      "original_sha256": "4f3de942f40ae18de51992b19532170db2e2e064a57f5fb1bdb6a1ac741ce8f3",
+      "public_sha256": "33c682fe99f9bf73d8c905b00dc6d8c0d33df32b8396be953171b2f6475cf747",
+      "reason": "Public provenance path policy replaces obsolete local-package statement",
+      "source_identity_redaction": false
+    },
+    "provenance/rights_and_release_status.json": {
+      "original_sha256": "c268c0f5d2280963176c804c53ebb790376aad1c88b1c3c7c299a293da795b07",
+      "public_sha256": "cdbacc2eb03c9fbc719f1de0551f0968fab6ecb0a437af265929ca5fd51a2f26",
+      "reason": "Version, persistent identifier and selected license metadata",
+      "source_identity_redaction": false
+    },
+    "requirements-review.txt": {
+      "original_sha256": "473b3ed74078aab1da6291d342dac2fd16d945980db6c9088434001165c5fedb",
+      "public_sha256": "6f290423cb3b21d5f423f7bdb27057da055eb443304106e92b41873def271aca",
+      "reason": "Version comment only; dependency pins unchanged",
+      "source_identity_redaction": false
+    },
+    "README.md": {
+      "original_sha256": "0a9b07c3b2444dc5b0f9a129e50add40f2042b7bd94d2fd4a81614d846b78d6b",
+      "public_sha256": "542248d9c7e10477e5d866fa5c4bfd4e2c08a7a65dbd696f2150543de89dbe5f",
+      "source_identity_redaction": false,
+      "reason": "Public release documentation and explicit provenance-view adapter; scientific math unchanged"
+    },
+    "verify_release.py": {
+      "original_sha256": "e0ffc36647586366ba00e51ee74c5497bf94a1fc900ffe8894676a69edf871de",
+      "public_sha256": "c615e5a0853f5bfd9bfcd85e7a4863837049133e289fec180b41ac13bccad337",
+      "source_identity_redaction": false,
+      "reason": "Public release documentation and explicit provenance-view adapter; scientific math unchanged"
+    },
+    "verify_posthoc_review.py": {
+      "original_sha256": "717972be5527cdc2d0923ee9892c34f056b14fb5330bfa51461c3f505bef288e",
+      "public_sha256": "8204b64d0f4a8eff5b31becc143c90bb0a4712f0935d97bc74d934e7fef82b70",
+      "source_identity_redaction": false,
+      "reason": "Public release documentation and explicit provenance-view adapter; scientific math unchanged"
+    },
+    "source_snapshot/review/CARF_事后诊断敏感性设计_20261021.md": {
+      "original_sha256": "0d4b6fbbbc438f39eeb184b70943c7225450350e1512008aef8cda29d90f11d1",
+      "public_sha256": "acecb35f2f60fd96e9c9c88b3b00aa302f21ba0d68b7afbd255ed24be0f3500b",
+      "source_identity_redaction": false,
+      "reason": "Internal workflow authorization and packaging wording removed from introductory paragraph; scientific rules, numbers and equations unchanged. Frozen receipt intentionally retains the original design identity."
+    }
+  },
+  "omitted_internal_files": [
+    {
+      "path": "release_manifest.json",
+      "sha256": "f98bbb1e5dd21cd402c90fb46c812c28d8dc292084193bef6b67cb7a45dbd22f",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "revision_record_v2.json",
+      "sha256": "2872a61652ff99905976147d0cdfa0c760c2f67bb0d179e4749992009ae442c0",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "588757a381609e6edd8f5bc0d7527fbb1d4bca5143fe5b4468b9dc0c75f669a7",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "provenance/release_v1_parent/archive_receipt.json",
+      "sha256": "72e45f21f13ae133ba5840b57b154bf9d2eed165769bb04e85fc7c11971ef85b",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "provenance/release_v1_parent/README.md",
+      "sha256": "b1d5f3443aa5accb29ce04e1ed3652f6972b28c2903d42b7f2c138c19d51304b",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "provenance/release_v1_parent/release_manifest.json",
+      "sha256": "61d0cd8db3b20c5307543c228bd2d3ff879d668f2748dbbd6035c43b1be430e0",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "provenance/release_v1_parent/SHA256SUMS",
+      "sha256": "6d98ef7da8ecadf4cf2f5884aa00c54220af46dda24fb4a1fd6a90ab232d178b",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "data/posthoc_diagnostic_sensitivity_v1/review/attempt01_audit_implementation_error.log",
+      "sha256": "60384033970e4f4cc6b25db931e81c40b1d5a167460c5f3987fb831a3b2f6729",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "data/posthoc_diagnostic_sensitivity_v1/review/audit_attempt_note.json",
+      "sha256": "e60c6d30b24b32a2ed681007d23fe30dbd1baf79189e1fb465667b7cfdddee58",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/fresh_environment_pip_freeze.txt",
+      "sha256": "5df337bdea898bd8437944969e5f03bd51bba2da69ad36a5afad2b9c29c7b0d5",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/verification_report.json",
+      "sha256": "566e34db7038fa98fc1423a75e923ec552ab30c500bc7cc52689e5831886b950",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/unit_tests.log",
+      "sha256": "4814ff3b3efc884515c54dcb179e2cd70564c28e510d3fce52f1a64fe38fcc28",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/tested_release_manifest.json",
+      "sha256": "1076d15f1e28a411e953593ba98dd79e2b1c9bd6ba37c54a323bfbe3362a4296",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/regenerated_condition_summary.csv",
+      "sha256": "0891575103cc0734564f4261ea372bd30ae9ba78ba1ba2a54c340cd23d9e63e9",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/finalization_note.json",
+      "sha256": "b56999da60d60a3e078abc6b40cca7194dfcf2297955603062307d8b5f58c820",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/figure_png_comparison.json",
+      "sha256": "0afc7d3898635c686ed222305259ac785a2ff3df6adf2063266c0274cd8947d8",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/figure_reproduction.log",
+      "sha256": "52d894abad71f0fa3ecaef5206859d91bd508239863cc86ea3f4ff8c2a4eedd7",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/fresh_environment_identity.json",
+      "sha256": "5c505fad85f411117e96a42cf32bd044ef989149f94dd791bec0b6b6da95bfc8",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/attempt01/unit_tests.log",
+      "sha256": "abf928ebc10155caeb56a7ebd46d1b2994369f71563f9aeb2c5a9bb9c9c74c56",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/attempt01/stale_test_fixture.py",
+      "sha256": "df4810c74a10d3f840f6a25f6ef989e5ac8bdfaab2934d7ee13566562c126ff8",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v1/attempt01/failure_record.json",
+      "sha256": "cf3003e8b9929ae20ce66a2141ec7cd5efcc135cae58411c66227b87da465383",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/fresh_environment_pip_freeze.txt",
+      "sha256": "5df337bdea898bd8437944969e5f03bd51bba2da69ad36a5afad2b9c29c7b0d5",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/tested_revision_record_v2.json",
+      "sha256": "3761c0e2d45b5785563565d5b15bbf2a5ef77590d9ce66ba19ba7f3bc9ebe09d",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/verification_report.json",
+      "sha256": "999f74b2747f5b20b49454666aed5bb1338daf4cb5ce1f43b9af236a55d9caed",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/unit_tests.log",
+      "sha256": "cfcf8466fd38cd0a74825da0313df82c1f3ba92b10ff8706d162ea823525d2f2",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/posthoc_reproduction.log",
+      "sha256": "093fcc4575005cc782119bd2c098efc6270f2eda2e2f405f56a8d3cab737bf95",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/journal_figure_reproduction.log",
+      "sha256": "89ed94ed294cffbdb837169069dce7e01251b6413b7be696abd3e21354cfeb11",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/tested_release_manifest.json",
+      "sha256": "19bb00c2393fede3ccc7646fc681bc19a3b448298361a2a134c6da343532ce00",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/execution_stdout.log",
+      "sha256": "999f74b2747f5b20b49454666aed5bb1338daf4cb5ce1f43b9af236a55d9caed",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/regenerated_condition_summary.csv",
+      "sha256": "0891575103cc0734564f4261ea372bd30ae9ba78ba1ba2a54c340cd23d9e63e9",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/finalization_note.json",
+      "sha256": "9e8c72cfd5418fcb4349e5f0469bdc0dc499325ec0d5b2cdda4a840de6363bc4",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/figure_png_comparison.json",
+      "sha256": "ab0e77bc1d3481830e77571f4d260af26689be7a6af26a5959115299dbd49b77",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/figure_reproduction.log",
+      "sha256": "8d767ba93783686d8d262f233248d9fac43031b92c56ecbaf595333f578c78b0",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/fresh_environment_identity.json",
+      "sha256": "9279e1254de83c356e28a6235d79c8cfb3c696fd9defbe950c228f7ff3233a2c",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/posthoc/summary.json",
+      "sha256": "b5f8b91f34f02d2ae789602468f95c0b97656ad2b0276d7bbd57073da59f0221",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    },
+    {
+      "path": "validation/v2/posthoc/independent_context_checks.csv",
+      "sha256": "f0cfaf722110ef93eaddb99fa5a948b2a1242671b23a5f0acfc13e146b71eeec",
+      "reason": "Superseded package metadata or internal execution history; scientific data retained"
+    }
+  ]
+}
