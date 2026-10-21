@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this analysis package, cite this software version and the original data sources in THIRD_PARTY_NOTICES.md."
+title: "CARF measurement study: expression adjustment, ranking stability and identity specificity"
+type: software
+version: "2.0.0"
+date-released: 2026-10-21
+authors:
+  - given-names: Xutao
+    family-names: Guo
+    orcid: "https://orcid.org/0000-0002-7201-8092"
+repository-code: "https://github.com/xutaoguo55/CARF"
+url: "https://doi.org/10.5281/zenodo.23537089"
+doi: "10.5281/zenodo.23537089"
+license: CC-BY-NC-4.0
+keywords:
+  - perturbation inference
+  - ranking stability
+  - expression adjustment
+  - measurement sensitivity
+  - reproducibility

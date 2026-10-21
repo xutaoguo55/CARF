@@ -1,0 +1,8 @@
+# Direct dependencies used for the local review validation.
+# Exact transitive versions from the fresh test environment are recorded in
+# validation/2.0.0/fresh_environment_pip_freeze.txt after the test completes.
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
+h5py==3.14.0
+matplotlib==3.10.3
