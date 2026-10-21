@@ -1,0 +1,33 @@
+{
+  "status": "verified_author_deposit",
+  "checked_utc": "2026-10-21T06:16:32.911171+00:00",
+  "source_record": {
+    "title": "\"Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq\" Replogle et al. 2022 processed Perturb-seq datasets",
+    "doi": "10.25452/figshare.plus.20029387.v1",
+    "record_url": "https://doi.org/10.25452/figshare.plus.20029387.v1",
+    "record_api": "https://api.figshare.com/v2/articles/20029387",
+    "record_snapshot": "provenance/source_snapshots/figshare_article_20029387.json",
+    "record_snapshot_sha256": "da509edca0d08070de27109a2f5f5707b2e5e4cff1b4edeba704d75667e2ecd8",
+    "file_id": 35775606,
+    "file_name": "rpe1_raw_singlecell_01.h5ad",
+    "download_url": "https://ndownloader.figshare.com/files/35775606",
+    "bytes": 8700873216,
+    "expected_md5": "6a2a9d0d2bf4ec147f4d1104043b268c"
+  },
+  "study": {
+    "citation": "Replogle et al. 2022, Cell, doi:10.1016/j.cell.2022.05.013",
+    "cell_context": "RPE1 essential-scale CRISPRi Perturb-seq, day 7",
+    "primary_raw_archive": "NCBI SRA BioProject PRJNA831566",
+    "file_scope": "author-deposited raw single-cell H5AD; not a reprocessed reconstruction from FASTQ",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "local_file": "raw/rpe1_raw_singlecell_01.h5ad",
+  "actual_bytes": 8700873216,
+  "actual_md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+  "actual_sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1",
+  "validation": "live Figshare file ID, declared size, supplied MD5, downloaded file size, and downloaded MD5 all agree"
+}

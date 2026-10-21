@@ -1,0 +1,31 @@
+{
+  "status": "verified_author_deposit",
+  "checked_utc": "2026-10-21",
+  "source_record": {
+    "title": "\"Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq\" Replogle et al. 2022 processed Perturb-seq datasets",
+    "doi": "10.25452/figshare.plus.20029387.v1",
+    "record_api": "https://api.figshare.com/v2/articles/20029387",
+    "record_url": "https://doi.org/10.25452/figshare.plus.20029387.v1",
+    "file_id": 35775581,
+    "file_name": "rpe1_raw_bulk_01.h5ad",
+    "download_url": "https://ndownloader.figshare.com/files/35775581",
+    "expected_bytes": 95350546,
+    "expected_md5": "74765fa87635467a869ea972356ae0e7",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "local_file": "reconstruction/raw/rpe1_raw_bulk_01.h5ad",
+  "actual_bytes": 95350546,
+  "actual_md5": "74765fa87635467a869ea972356ae0e7",
+  "actual_sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+  "study": {
+    "citation": "Replogle et al. 2022, Cell, doi:10.1016/j.cell.2022.05.013",
+    "context": "RPE1 essential-scale CRISPRi Perturb-seq, day 7",
+    "primary_raw_archive": "NCBI SRA BioProject PRJNA831566",
+    "scope": "bulk pseudobulk companion used only for label-count/sample-size preflight; not an independent-cell validation matrix"
+  },
+  "validation": "live Figshare record, declared size, supplied and computed MD5, and local size/MD5 agree"
+}
