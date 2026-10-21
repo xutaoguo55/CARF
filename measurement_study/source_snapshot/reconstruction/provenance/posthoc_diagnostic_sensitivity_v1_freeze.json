@@ -1,0 +1,10 @@
+{
+  "status": "posthoc_rules_frozen_before_new_sensitivity_results_not_original_preregistration",
+  "frozen_utc": "2026-10-21T07:32:21.550464+00:00",
+  "config_path": "reconstruction/config/posthoc_diagnostic_sensitivity_v1.json",
+  "config_sha256": "7d0d93e5b8015b0cb863a07d3751a31a9cdd4ac1ea9fbb8b72106df475fd7d45",
+  "design_path": "review/CARF_事后诊断敏感性设计_20261021.md",
+  "design_sha256": "0d4b6fbbbc438f39eeb184b70943c7225450350e1512008aef8cda29d90f11d1",
+  "analysis_started": false,
+  "source_evaluation_manifest_sha256": "a6ce589b9f763dd93043b16b961f015a87209b94bd0bc37dd232183af686151f"
+}
