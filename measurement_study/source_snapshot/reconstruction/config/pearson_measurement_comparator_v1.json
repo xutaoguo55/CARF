@@ -1,0 +1,19 @@
+{
+  "protocol_id": "pearson_measurement_comparator_v1",
+  "status": "development_comparator_added_after_native_model_pilot_not_confirmation",
+  "purpose": "Add a transparent, deterministic control-only association ranking on the exact existing model input and evaluation universe, without choosing targets or parameters by favorable results.",
+  "datasets": ["Adamson", "Norman"],
+  "source_protocol": "measurement_diagnostic_pilot_v1",
+  "input": "Read verified native-fit input matrices from q1_thin0_model42 and q0.5/q0.25 at the three declared thinning seeds; use the identical fixed 400 Dm cells, selected genes and targets.",
+  "normalization": "Within the fixed model gene universe, divide each cell's observed UMI by the sum over its model genes, multiply by 10000, then log1p. If any cell has zero sum, report failed condition; do not select new cells or genes.",
+  "score": "Absolute Pearson correlation across the Dm cells between target expression and each candidate gene. A control-only association baseline, not an estimated causal knockdown effect or a trained perturbation foundation model.",
+  "zero_variance": "Return an all-zero unrankable score row for a zero-variance target; return score zero for zero-variance candidate genes; record both. No favorable task exclusion.",
+  "diagnostic": "Signed residual of log10(max(score,1e-10)) on the same independently estimated C0 or Cq covariate used in the native-model pilot, with intercept.",
+  "evaluation": "Reuse exactly the fixed B/C outcomes, candidate genes excluding all direct targets, Top50 weights with fractional boundary ties, cross-target identity comparisons and continuous control-null outcomes.",
+  "conditions": ["baseline S0_C0", "S0_Cq", "Sq_C0", "Sq_Cq"],
+  "thinning_probabilities": [0.5, 0.25],
+  "thinning_seeds": [20261031, 20261032, 20261033],
+  "primary_k": 50,
+  "checks": ["Every registered source file hash verified before read", "No target/candidate/order mismatch", "q1 raw score agrees with independently recomputed numpy correlation", "S0_Cq raw score and evaluation exactly unchanged", "No newly selected targets, cells, genes or hyperparameters"],
+  "limits": ["Association baseline alone does not satisfy the need for an independently validated perturbation prediction model", "Both studies are K562 and development data have already been inspected", "Upstream all-cell HVG and all-D feature-selection limitations remain", "New molecular thinning is reused from recorded computational interventions, not a new biological experiment", "Report all results without interpreting near-zero sign changes as information gain"]
+}

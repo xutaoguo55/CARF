@@ -1,0 +1,124 @@
+{
+  "protocol_id": "rpe1_measurement_validation_v1",
+  "status": "frozen_after_source_and_metadata_checks_before_new_effects_or_predictions_not_preregistered",
+  "questions": [
+    "Separate the effects of model-input measurement and adjustment-covariate measurement on perturbation-ranking judgments",
+    "Determine how the specified expression adjustment changes total response and held-out target identity information"
+  ],
+  "source": {
+    "file": "raw/rpe1_raw_singlecell_01.h5ad",
+    "doi": "10.25452/figshare.plus.20029387.v1",
+    "bytes": 8700873216,
+    "md5": "6a2a9d0d2bf4ec147f4d1104043b268c",
+    "sha256": "9b05ef1f81526216fa008d677e9e0d03dce9a2f7a95499a4fb81e505e9d88ef1",
+    "required_contents_audit": "provenance/rpe1_contents_v1/summary.json"
+  },
+  "metadata_scope": "Unambiguous single stable Ensembl targets with a matching measured gene and at least 40/30/30 cells in GEM sets A/B/C. Use (gem_group-1)%3=0/1/2 respectively. Metadata preflight gives exactly 505 eligible targets from 660 targets with >=100 total cells; assert this before fitting. Publish all exclusions. No response-based target selection.",
+  "split_seed": 20261110,
+  "rng_rule": "Derive independent numpy default_rng streams from the first 16 bytes of SHA256(protocol_id|stream_description|seed), interpreted little endian; record stream descriptions.",
+  "control_pools": "Draw Dm=400 then Dc=400 distinct controls, proportionally stratified by each of the 56 real GEM groups using largest remainder quotas. For ties use ascending GEM ID. Within each group use a deterministic seeded permutation. The remaining controls belong to A/B/C by GEM modulo 3. Controls may be shared between targets within the same arm; pools never overlap across arms or Dm/Dc.",
+  "target_cells": "For every eligible target draw A40, B30, C30 from its corresponding disjoint GEM sets. Within each arm allocate quotas proportionally to exact guide-pair x GEM strata with largest remainders, ties by stratum string, and sample without replacement. Draw an equal number of control cells from the matching arm pool with exactly the same GEM counts. Fix all cell IDs before reading their expression for model fits or evaluation.",
+  "zero_library_policy": "Every selected cell must have positive sum over the 8749 observed genes. If any has zero sum, record and fail preparation; do not select a replacement after seeing outcomes.",
+  "normalization": "For each selected cell divide raw counts by its sum over all 8749 author-filtered observed genes, multiply by 10000, log1p. Use this same explicit transform for A/B/C, Dm, Dc and Pearson inputs. Do not use author UMI_count or core-adjusted counts as the denominator. The author observed-gene filter remains a source limitation.",
+  "target_folds": "Sort all 505 eligible stable Ensembl IDs by SHA256(protocol_id|fold|target), ties by ID, assign sorted position modulo 3. Training includes only other-fold A cells; no test-target A or any B/C cells in PCA, regression or parameter choice.",
+  "gene_and_evaluation_target_selection": "At q1 only, use Dm normalized expression to compute detection fraction and variance. Require detection>=0.05 and variance>0 for selectable model genes/targets. Rank genes by decreasing variance, ties by Ensembl ID, retain the first 1000. Among the 505 eligible targets passing these Dm conditions, select up to 128 by SHA256(protocol_id|evaluation_target|target), ties by ID. Require at least 64 selected targets and at least 10 in each fold, otherwise stop. Freeze the lists before reading target response values. No reselection at lower depth.",
+  "model_gene_scope": "scTenifoldKnk and Pearson use the union of the selected top-variance 1000 genes and selected evaluation target genes. Linear PCA uses all 8749 observed genes so every one of the 505 training/test target embeddings can be represented. Record these different internal input budgets; do not interpret between-model performance as an architecture comparison.",
+  "evaluation_gene_scope": "Selected top-variance genes excluding every unambiguous single directly perturbed stable target in the entire source, including targets ineligible for this experiment. Keep one identical ordered universe across targets, models, folds and conditions. Require more than 50 genes.",
+  "linear": {
+    "architecture": "Published bilinear ridge architecture adapted as in heldout_linear_diagnostic_v1; no ctrl training column",
+    "components": 10,
+    "ridge_penalty_each_side": 0.1,
+    "Y": "Mean normalized post-expression from 40 A cells per training target, gene-by-condition matrix",
+    "PCA": "Center each condition column across genes; no scaling; G=U*singular_values for first 10 components; P/P_test are training/test target rows of G",
+    "regression": "Center Y per gene across training conditions, fit both-sided ridge, add training per-gene mean; subtract current-condition Dm normalized mean to produce signed prediction delta",
+    "q_intervention": "Thin raw counts of all A perturbation training inputs and Dm reference, then renormalize and refit inside the same target folds. This changes training input AND prediction reference measurement, not just learned information."
+  },
+  "native": {
+    "package": "scTenifoldKnk",
+    "version": "2.0.0",
+    "input": "Raw Dm counts on frozen model genes; transcriptomeWide heat-distance configuration matching prior pilot",
+    "nc_nNet": 10,
+    "nc_nCells": 400,
+    "nc_nComp": 3,
+    "nc_q": 0.9,
+    "ma_method": "heat",
+    "heatT": 10,
+    "dr_direction": false,
+    "cores": 2,
+    "baseline_seed": 42,
+    "additional_q1_algorithm_seeds": [
+      43,
+      44
+    ]
+  },
+  "pearson": "Absolute Pearson correlation between target and candidate normalized Dm expression. Zero variance gives zero scores and explicit flags, not exclusion.",
+  "covariate_cells": {
+    "primary": 400,
+    "nested_sensitivity": 64,
+    "subset_rule": "Take a fixed seeded sample of 64 from the frozen Dc400. Reuse it across molecular-thinning seeds. It assesses this subset, not all possible 64-cell samples."
+  },
+  "thinning_probabilities": [
+    0.5,
+    0.25
+  ],
+  "thinning_seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "thinning": "Independent binomial thinning conditional on observed counts. Separate RNG streams for Dm, Dc and each target A. Thin Dc400 once per q/seed, then use its fixed 64 subset. No B/C or empirical-A anchor thinning. No new biological experiment is implied.",
+  "factorial": [
+    "S0_C0",
+    "S0_Cq",
+    "Sq_C0",
+    "Sq_Cq"
+  ],
+  "adjustment": "Raw native distance, absolute Pearson, or absolute predicted delta; EDR is the signed OLS residual of log10(max(raw_score,1e-10)) against mean normalized Dc expression with intercept. Do not use absolute residuals or combine diagnostics into a composite score.",
+  "comparators": [
+    "same-fold training-condition mean prediction",
+    "five training-label-permuted linear predictions at q1",
+    "fixed unthinned observed A delta as technical positive anchor",
+    "fixed Dc400 expression-only ranking",
+    "constant tie-weight ranking",
+    "continuous control-versus-control outcomes"
+  ],
+  "training_label_permutation_seeds": [
+    20261121,
+    20261122,
+    20261123,
+    20261124,
+    20261125
+  ],
+  "permutation_rule": "Within each training fold permute P-row assignment relative to Y columns; hold G, b, test embeddings and fold identities fixed. All five draws reported; no permutation p-value.",
+  "null_partitions": 30,
+  "null_rule": "For each null partition sample 30 pseudo-treated controls in each B and C pool, then 30 distinct controls in that same pool matching the pseudo-treated GEM counts. B and C pools are disjoint. Freeze null deltas before model evaluation. Null partitions share source pools and are not independent experiments.",
+  "primary_k": 50,
+  "evaluation": "Fractional boundary-tie Top50 weights; total utility=(B*C) dot weights/50. Identity gain compares the query's own ranking against average other evaluation-target rankings from the SAME held-out fold. Use that identical fold-restricted source pool for native/Pearson/positive anchors. For linear also report signed MSE and delta correlations separately against B and C, paired with same-fold training mean. Never cross fold-mix mismatch sources.",
+  "practical_readouts": {
+    "interpretation": "Operational criteria on this finite experiment, not statistical equivalence or biological significance",
+    "ranking": "For each target average three thinning seeds, then require mean Top50 inclusion-weight agreement>=0.90 AND target 10th percentile>=0.80; also report each seed, threshold crossings, and constant/floor cases",
+    "utility": "Report mean absolute and mean signed changes, plus 90th percentile absolute change. Fixed scale D_A is q1 empirical-A total utility minus mean control-null utility under those same empirical-A weights. If D_A<=0 or positive/null summaries are not separated, mark unscalable and give raw units. Mean absolute change/D_A<=0.10 is an operational small-change reference, never proof of identity retention",
+    "identity": "Report raw and EDR identity and paired differences in original units and relative to fixed q1 empirical-A identity where positive. Do not infer retained target information from total-utility stability. Avoid relative retention ratios when raw identity is weak or crosses zero across folds",
+    "contrasts": "Apply covariate criteria separately to S0Cq-S0C0 and SqCq-SqC0; model-input deterioration alone is not diagnostic failure. Report n400 and n64 within-n q contrasts and n64 versus baseline n400 contrasts separately",
+    "precision": "Report all targets, all three seeds, each fold, numerical flags and full ranges. Optional paired target bootstrap must be labeled target-reweighting sensitivity with mismatch sources fixed; no biological CI or formal equivalence claim.",
+    "positive_null_separation": "Let P be the mean fixed q1 empirical-A total utility over evaluation targets. Let N_j be the mean utility across these same fixed empirical-A ranking weights for frozen control-null partition j. D_A=P-mean_j(N_j). Permit scale normalization only if D_A>0 and P>max_j(N_j). This is observed finite-sample separation, not a p-value, confidence guarantee or calibrated hypothesis test. Otherwise mark unscalable."
+  },
+  "success_and_failure": "Keep all models, targets and conditions; record low information, floor, zero variance, absent signal or numerical failures. Pass/fail/information-insufficient states are distinct. Interpret results by the two predefined questions; do not switch seeds, target lists, thresholds or k to obtain agreement. A meaningful effect, a bounded observed stability result, or an inconclusive result are all possible.",
+  "limits": [
+    "External cell context within a published study, not newly generated data and not zero-shot K562-to-RPE1 transfer",
+    "GEM-disjoint technical evaluation is not independent donor/biological-replicate validation",
+    "Guide-pair mixtures remain; A|B guide components are not independent replicates",
+    "Dm and Dc cells are disjoint from each other and evaluation, but share technical GEM groups with A/B/C",
+    "Models receive different supervision and feature budgets",
+    "Existing EDR-specific conclusions cannot be generalized to all adjustment procedures",
+    "Additional models/data and thinning alone do not establish innovation"
+  ],
+  "amendments": [
+    {
+      "utc": "2026-10-21T06:29:08.277887+00:00",
+      "reason": "Clarify an operational decision rule during independent protocol review before execution; no change to models, samples or thresholds.",
+      "previous_sha256": "9fa861b24aae77a49906b8b4b0dfdde706c8ec2134a90d7aa4c04b60db6c74f1",
+      "previous_config_snapshot": "review/history/rpe1_measurement_validation_v1_before_scale_clarification.json"
+    }
+  ]
+}
